@@ -1,0 +1,103 @@
+#info_panel{
+
+  position: absolute;
+  display: none;
+  z-index: 99;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  max-height: calc(100% - 100px);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  z-index: 990;
+  -webkit-font-smoothing: subpixel-antialiased;
+  max-width:800px;
+  min-width:300px;
+  transform: translate3d(-50%, -50%,0) scale(1.0, 1.0);
+
+}
+
+#info_panel div{transform: translateZ(0);}
+
+#info_panel_overlay {
+  background: rgba(0, 0, 0, .5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  display: none;
+  z-index: 2;
+}
+
+#info_panel #info_panel_content {
+
+  margin: 0px;
+  padding: 15px 15px 0 0;
+  position: relative;
+  overflow:auto;
+
+}
+
+#info_panel #info_panel_content_html {
+
+  background-color:#fff;
+  margin: 0px;
+  padding: 15px;
+  position: relative;
+  overflow:auto;
+
+}
+
+#info_panel #info_panel_close {
+  height :30px;
+  width: 30px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 100;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 3px;
+  line-height: 1em;
+  margin: 0;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+#info_panel #info_panel_close img{height :24px;width: 24px;}
+
+#info_panel #info_panel_content_html p, #info_panel #info_panel_content_html dl, #info_panel #info_panel_content_html blockquote, #info_panel #info_panel_content_html hr, #info_panel #info_panel_content_html pre, #info_panel #info_panel_content_html table, #info_panel #info_panel_content_html figure, #info_panel #info_panel_content_html address,#info_panel #info_panel_content_html ul, #info_panel #info_panel_content_html ol {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1em;
+}
+#info_panel #info_panel_content_html ul, #info_panel #info_panel_content_html ul ul, #info_panel #info_panel_content_html ul ol, #info_panel #info_panel_content_html ol, #info_panel #info_panel_content_html ol ul, #info_panel #info_panel_content_html ol ol {
+  margin-left: 1.5em;
+}
+
+#info_panel #info_panel_content_html strong, #info_panel #info_panel_content_html b{
+
+  font-family: "Pro Medium", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+#info_panel #info_panel_content_html a{
+  color: #303442;
+  text-decoration: underline;
+}
+#info_panel #info_panel_content_html a:hover{
+  color: #1f1f1f;
+  text-decoration: underline;
+}
+#info_panel #info_panel_content_html ul{
+  list-style-type: circle;
+}
+
+#info_panel #info_panel_content_html img {
+  max-width:100%;
+}

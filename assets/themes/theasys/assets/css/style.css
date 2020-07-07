@@ -1,0 +1,315 @@
+html {
+  height:100%;
+  min-height:100%;
+}
+html, body {
+  overflow:hidden;
+}
+body {
+  position: fixed;
+  background-color: transparent;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  font-family: "Pro Light", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  touch-action: none;
+}
+
+a {
+  color: #fff
+}
+
+a:hover {
+  color: yellow
+}
+
+a:focus {
+  color: #111
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently not supported by any browser */
+}
+
+.hidden {
+  display: none !important;
+}
+
+:hover,
+:focus,
+:active {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#viewer_wrapper {
+  position: relative;
+  overflow:hidden;
+}
+
+#tooltip {
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  background: rgba(0, 0, 0, .3);
+  padding: 5px 10px;
+  color: #fff;
+  display: none;
+}
+
+#tooltip:after,
+#tooltip:before {
+  top: 0%;
+  right: -28px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+#tooltip:after {
+  border-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, .3);
+  border-width: 14px;
+  margin-left: 30px;
+}
+
+.btn.btn-default {
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  letter-spacing: 0;
+  font-weight: 300;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -webkit-transition: all 260ms ease;
+  -moz-transition: all 260ms ease;
+  -ms-transition: all 260ms ease;
+  -o-transition: all 260ms ease;
+  transition: all 260ms ease;
+}
+
+.btn.btn-default,
+.btn.btn-default:focus {
+  background: linear-gradient(to bottom, #fff, #f9fafb);
+  border: 1px solid #d8d8d8;
+  box-shadow: 0 1px 0 0 rgba(22, 29, 37, 0.05);
+  color: #303442;
+}
+
+.btn.btn-default:hover,
+.btn.btn-default:active {
+  background: linear-gradient(to bottom, #f9fafb, #f4f6f8);
+  border: 1px solid #d8d8d8;
+  box-shadow: inset 0 1px 1px 0 rgba(99, 115, 129, 0.1), inset 0 1px 4px 0 rgba(99, 115, 129, 0.2);
+  color: #303442;
+}
+
+
+#viewer_titles-tour_title,#viewer_titles-tour_description,#viewer_titles-panorama_title,#viewer_titles-panorama_description{
+  margin-bottom: 6px;
+  color: #303442;
+}
+
+#viewer_titles-tour_title, #viewer_titles-viewer_title{
+  font-family: "Pro Medium", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #263772;
+
+}
+#viewer_titles-panorama_title{
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+#viewer_titles-tour_description{
+  display: inline-block;
+  font-size: 15px;
+}
+
+#viewer_titles-panorama_description{
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.sign-in-button{
+
+  display:inline-block;
+  border-radius: 0;
+  border: none;
+  font-size: 14px;
+  padding: 8px 12px;
+  line-height: 1em;
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: rgba(38, 55, 114, 0.8);
+  color: #fff!important;
+  margin-top:10px;
+  text-decoration:none;
+  font: 400 13.3333px Arial;
+
+}
+
+.sign-in-button:hover{
+
+  background-color: rgba(38, 55, 114, 1);
+  color:#fff;
+
+}
+
+.positionFixed {
+  position: fixed
+}
+
+.mobile-viewer-logo {
+  height: 100%;
+  width: auto;
+}
+
+.submenu a {
+  color: #6e6e6e;
+  text-decoration: none;
+}
+
+svg {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.flex-container {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.flex-item:nth-child(1) {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+.flex-item:nth-child(2) {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+.flex-item:nth-child(3) {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+.img-responsive {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.viewer_titles_info {
+  cursor: pointer
+}
+
+#viewer_titles-description {
+  position: absolute;
+  display: none;
+  background-color: rgba(0, 0, 0, .3);
+  padding: 10px;
+  text-align: left;
+  width: 250px
+}
+
+.inline-window-host {
+  bottom: auto;
+  top: 100px
+}
+
+#embed_status {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  z-index: 99999;
+  padding: 6px 12px;
+  font-family: "Pro Light", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight :300;
+}
+
+#embed_status.embed_status_type_0 {
+  background: #FF3F44;
+  color: #fff;
+}
+
+#embed_status.embed_status_type_1 {
+  background: #339966;
+  color: #fff;
+}
+
+@media(max-width: 991px) {
+  #embed_status{
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+
+  .dashboard_content{
+    margin-top: 100px;
+  }
+}
+
+.embed-responsive{padding-bottom:50%;position:relative;width:600px;}
+.embed-responsive iframe{width: 100%; position: absolute; height: 100%; border: 0px;}
+
+#psi{width:100%;height:100%; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-repeat: no-repeat; background-position: center center; overflow: hidden; user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none;-o-user-select: none;}

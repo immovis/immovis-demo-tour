@@ -1,0 +1,72 @@
+#panorama-sound {
+  background-color: transparent;
+  z-index: 999;
+  display: none;
+  position: fixed;
+  text-align: center;
+  border-radius: 5px;
+  bottom: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(50%);
+  -moz-transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+#panorama-sound-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, .5);
+  display: none;
+  z-index:2;
+}
+
+#panorama-sound .panorama-sound-close {
+  height :30px;
+  width: 30px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  z-index: 100;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 3px;
+  line-height: 1em;
+  margin: 0;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+#panorama-sound .panorama-sound-close img{
+  width: 24px;
+  height: 24px;
+}
+
+#panorama-sound-content {
+  background: #fff;
+  padding: 18px 24px;
+  border-radius: 0px;
+  color: rgba(38, 55, 114, 1);
+  font-size: 18px;
+}
+
+#panorama-sound-content button{
+  margin-top: 18px;
+  letter-spacing: 0.05em;
+}
+
+#panorama-sound-content button ~ button {
+  margin-left: 18px;
+}
